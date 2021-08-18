@@ -42,9 +42,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#animation-class">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#services">Resume</a></li>
           <li><a class="nav-link scrollto " href="#work">Work</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -55,13 +55,32 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/sb-blog-programming.jfif)">
+  <!-- Uncomment for the old look -->
+  <!-- <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/sb-blog-programming.jfif)"> -->
+  <div id="animation-class" class="hero route bg-image animation-class" >
+    <!-- Animated Background Scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#animation-class",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 700.00,
+      minWidth: 500.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3fcaff,
+      backgroundColor: 0xa090e
+    })
+  </script>
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Mouhamadou Tall</h1>
+          <h1 class="hero-title mb-4">Hello, I'm Mouhamadou Tall</h1>
           <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Computer Techie, Life Long Learner, Avid Reader"></span></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
@@ -110,7 +129,7 @@
                     </div>
                     <span>Javascript</span> <span class="pull-right"></span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>Typescript</span> <span class="pull-right"></span>
                     <div class="progress">
@@ -122,9 +141,9 @@
                     </div>
                     <span>MySQL</span> <span class="pull-right"></span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <span>Node.js</span> <span class="pull-right"></span>
+                    <span>Full Web Stack</span> <span class="pull-right"></span>
                     <div class="progress">
                       <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -137,17 +156,17 @@
                         About me
                       </h5>
                     </div>
-                    <p class="lead">
+                    <p id="intro-paragraph">
                       Recent graduate at the University of North Florida with a Bachelors of Science in Computing and
-                      Information Sciences, concentration in Computer Science. Passionate about programming.
+                      Information Sciences, concentration in Computer Science.
                     </p>
-                    <p class="lead">
-                      I am a Web/Software Developer with eperience building multi-tiered and full-stack .NET Application with C#, Angular, MVC, SQL, Javascript, HTML, and CSS. 
-                      I have an in-depth 
+                    <p id="intro-paragraph">
+                      I am a Web/Software Developer with experience building multi-tiered and full-stack application. 
+                      
                     </p>
-                    <p class="lead">
-                      Leverage technical, analytical and problem-solving skills to create dynamic, high-speed websites, apps and platforms.
-                      Great team player who continuously seek personal development by using available ressources and stay on top of current technologies. 
+                    <p id="intro-paragraph">
+                      My passion for developing is unmatched. Every day I wake up pumped to collaborate, design and code. I love every aspect of bringing an idea to fruition and find each step of the way exciting.
+                      Looking for my next opportunity.
                     </p>
                   </div>
                 </div>
@@ -158,24 +177,29 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
+    <!-- ======= Resume Section ======= -->
     <section id="services" class="services-mf pt-5 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                Services
+                Resume
               </h3>
               <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <a href="./resume.html" target="_blank">
+                  <u>Click here to view resume</u> <img src="./assets/img/viewfile.png" alt="">
+                </a> or 
+                <a href="./assets/files/Tall_M_Resume.pdf" download="Tall_M_Resume">
+                  <u>Click here to download pdf version</u> <img src="./assets/img/download.png" alt="">
+                </a>
               </p>
               <div class="line-mf"></div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <!--<div class="col-md-4">
             <div class="service-box">
               <div class="service-ico">
                 <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
@@ -196,11 +220,9 @@
                 <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
               </div>
               <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
+                <h2 class="s-title">Front-End</h2>
                 <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
+                  JavaScript • Angular • Razor • HTML • CSS
                 </p>
               </div>
             </div>
@@ -211,16 +233,15 @@
                 <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
               </div>
               <div class="service-content">
-                <h2 class="s-title">Photography</h2>
+                <h2 class="s-title">Back-End</h2>
                 <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
+                  NodeJS • Express • C# • SQLite
+                  MySQL • SQL Server
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+           <div class="col-md-4">
             <div class="service-box">
               <div class="service-ico">
                 <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
@@ -264,7 +285,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section><!-- End Services Section -->
@@ -274,6 +295,7 @@
       <div class="overlay-mf"></div>
       <div class="container position-relative">
         <div class="row">
+          <!--
           <div class="col-sm-3 col-lg-3">
             <div class="counter-box counter-box pt-4 pt-md-0">
               <div class="counter-ico">
@@ -317,7 +339,7 @@
                 <span class="counter-text">AWARD WON</span>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div><!-- End Counter Section -->
